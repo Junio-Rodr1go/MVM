@@ -1,0 +1,21 @@
+.section { background: var(--black); }
+.head { text-align: center; margin-bottom: 3.5rem; }
+.label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--yellow); display: block; margin-bottom: 0.75rem; }
+.head h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 800; }
+.head h2 span { color: var(--yellow); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.card {
+  background: var(--black-3); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--r); padding: 2rem; transition: var(--tr);
+}
+.card:hover { border-color: rgba(245,197,24,0.2); transform: translateY(-3px); }
+.stars { color: var(--yellow); font-size: 1rem; letter-spacing: 2px; margin-bottom: 1rem; }
+.text { color: var(--gray-l); font-size: 0.9rem; line-height: 1.8; margin-bottom: 1.5rem; font-style: italic; }
+.author { display: flex; align-items: center; gap: 0.75rem; }
+.avatar {
+  width: 42px; height: 42px; background: rgba(245,197,24,0.15);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  color: var(--yellow); font-weight: 700; font-size: 1rem; flex-shrink: 0;
+}
+.author strong { display: block; font-size: 0.9rem; font-weight: 600; }
+.author span { font-size: 0.75rem; color: var(--gray); }

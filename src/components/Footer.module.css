@@ -1,0 +1,11 @@
+.footer { background: var(--black-2); border-top: 1px solid rgba(245,197,24,0.15); padding: 4rem 0 0; }
+.grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; }
+.logo { font-size: 2.5rem; font-weight: 900; color: var(--yellow); margin-bottom: 1rem; }
+.desc { color: var(--gray); font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.7; }
+.title { color: var(--yellow); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; }
+.list { display: flex; flex-direction: column; gap: 0.6rem; }
+.list li, .list button { color: var(--gray); font-size: 0.9rem; background: none; padding: 0; transition: color 0.2s; text-align: left; }
+.list button:hover { color: var(--yellow); }
+.bottom { margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
+.bottom p { color: var(--gray); font-size: 0.8rem; }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; gap: 2rem; } }

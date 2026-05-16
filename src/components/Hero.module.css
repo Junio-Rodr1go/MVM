@@ -1,0 +1,32 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #111 50%, #1a1200 100%);
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
+}
+.glow {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(245,197,24,0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+.content { position: relative; z-index: 1; padding-top: 7rem; padding-bottom: 5rem; }
+.tag {
+  display: inline-block;
+  background: rgba(245,197,24,0.1); color: var(--yellow);
+  border: 1px solid rgba(245,197,24,0.3);
+  padding: 0.4rem 1rem; border-radius: 100px;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 1px;
+  text-transform: uppercase; margin-bottom: 1.5rem;
+}
+.title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem;
+}
+.title span { color: var(--yellow); }
+.desc { font-size: 1.1rem; color: var(--gray-l); max-width: 560px; margin-bottom: 2.5rem; line-height: 1.8; }
+.btns { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 4rem; }
+.stats { display: flex; gap: 3rem; flex-wrap: wrap; padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.08); }
+.stats div { display: flex; flex-direction: column; gap: 0.25rem; }
+.stats strong { font-size: 1.75rem; font-weight: 800; color: var(--yellow); }
+.stats span { font-size: 0.8rem; color: var(--gray); text-transform: uppercase; letter-spacing: 1px; }
+@media (max-width: 480px) { .stats { gap: 1.5rem; } }
